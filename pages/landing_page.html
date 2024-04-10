@@ -2,39 +2,47 @@
 <html lang="en">
 
 <head>
+    <!-- Main Slogan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Main Slogan -->
     <!-- Include jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!--  Slick Carousel library -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const carousel = document.querySelector('.carousel');
-        const carouselInner = carousel.querySelector('.carousel-inner');
-        const carouselItems = carousel.querySelectorAll('.carousel-item');
-        const totalItems = carouselItems.length;
-        let currentIndex = 0;
-        const slideWidth = carouselItems[0].offsetWidth;
+    <!--  Slick Carousel library -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector('.carousel');
+            const carouselInner = carousel.querySelector('.carousel-inner');
+            const carouselItems = carousel.querySelectorAll('.carousel-item');
+            const totalItems = carouselItems.length;
+            let currentIndex = 0;
+            const slideWidth = carouselItems[0].offsetWidth;
 
-        function goToSlide(index) {
-            if (index < 0 || index >= totalItems) return;
-            currentIndex = index;
-            carouselInner.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        }
-
-        function slideNext() {
-            if (currentIndex < totalItems - 1) {
-                goToSlide(currentIndex + 1);
-            } else {
-                goToSlide(0);
+            function goToSlide(index) {
+                if (index < 0 || index >= totalItems) return;
+                currentIndex = index;
+                carouselInner.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
             }
-        }
 
-        setInterval(slideNext, 2000); // Change slide every 2 seconds
-    });
-</script>
-<!--  Slick Carousel library -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            function slideNext() {
+                if (currentIndex < totalItems - 1) {
+                    goToSlide(currentIndex + 1);
+                } else {
+                    goToSlide(0);
+                }
+            }
+
+            setInterval(slideNext, 2000); // Change slide every 2 seconds
+        });
+    </script>
+    <!--  Slick Carousel library -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,13 +82,15 @@
             <form>
                 <input type="text" placeholder="Search...">
                 <button type="submit">Go</button>
-
-
             </form>
         </div>
     </nav>
     <div class="body_section">
-        <h1>hello</h1>
+        <div class="_Main_Slogan">
+            <h1 id="Explore_the_Flavorful_World_of_Cultural_Cuisine!">Explore the <br> Flavorful World of Cultural Cuisine!
+            </h1>
+            <button id="Explore_button" type="button">Explore Now...</button>
+        </div>
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
@@ -94,7 +104,7 @@
                 </div>
             </div>
         </div>
-          
+
     </div>
     <!-- Today's special category-->
     <div class="lorem">Today's Special </div>

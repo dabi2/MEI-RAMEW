@@ -77,6 +77,21 @@
 .body_section{
     border: solid;
 }
+/* _Main_Slogan */
+#Explore_button{
+    font-family: "Merriweather";
+    font-size: 20px;
+    background-color: cadetblue;
+    border: 1px;
+}
+._Main_Slogan h1{
+font-family: "Merriweather",'Courier New', Courier, monospace;
+font-size: 60px;
+}
+#Explore_the_Flavorful_World_of_Cultural_Cuisine{
+    font-family: "audiowide";
+}
+/* _Main_Slogan */
 .carousel {
   margin-top: 50px;
   margin-right: 200px;
