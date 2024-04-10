@@ -1,51 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <title>Mei-ramew</title>
-        <link rel="icon" type="image/x-icon" href="">
-    </head>
-    <body>
-        <!-- page title and navigation bar-->
-        <nav>
-            <h1>Mei-ramew</h1>c
-            <ul class="menu">
-                <li><a href="https://www.youtube.com/watch?v=0yW7w8F2TVA&list=RDhk3-Q6b1IvY&index=12">Help</a></li>
-                <li><a href="https://www.w3schools.com/html/html_lists.asp">Sign In</a></li>
-                <li><a href="https://paletton.com/#uid=52V0u0kllllaFw0g0qFqFg0w0aF">Cart</a></li>
-                
-            </ul>
-            <!-- search bar-->
-            <div class="search">
-                <form>
-                    <input type="text" placeholder="Search...">
-                    <button type="submit">Go</button>
+
+<head>
+    <!-- Include jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--  Slick Carousel library -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const carousel = document.querySelector('.carousel');
+        const carouselInner = carousel.querySelector('.carousel-inner');
+        const carouselItems = carousel.querySelectorAll('.carousel-item');
+        const totalItems = carouselItems.length;
+        let currentIndex = 0;
+        const slideWidth = carouselItems[0].offsetWidth;
+
+        function goToSlide(index) {
+            if (index < 0 || index >= totalItems) return;
+            currentIndex = index;
+            carouselInner.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        function slideNext() {
+            if (currentIndex < totalItems - 1) {
+                goToSlide(currentIndex + 1);
+            } else {
+                goToSlide(0);
+            }
+        }
+
+        setInterval(slideNext, 2000); // Change slide every 2 seconds
+    });
+</script>
+<!--  Slick Carousel library -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- icon fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- icon fontawesome -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mei | Ramew</title>
+</head>
+
+<body>
+    <!-- page title and navigation bar-->
+    <nav class="navigation_bar">
+        &nbsp;
+        <a href="landing_page.html">
+            <h1>Mei-Ramew</h1>
+
+        </a>
+        <ul class="menu">
+            <li><a href="https://www.youtube.com/watch?v=0yW7w8F2TVA&list=RDhk3-Q6b1IvY&index=12">Help</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="https://www.w3schools.com/html/html_lists.asp">Sign In</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="https://paletton.com/#uid=52V0u0kllllaFw0g0qFqFg0w0aF">Cart</a></li>
+
+        </ul>
+        <!-- search bar-->
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit">Go</button>
 
 
-                </form>
+            </form>
+        </div>
+    </nav>
+    <div class="body_section">
+        <h1>hello</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="images/slider1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider2.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider1.jpg" alt="Image 3">
+                </div>
             </div>
-        </nav>
-        <!-- Today's special category-->
-        <div class="lorem">Today's Special </div>
+        </div>
+          
+    </div>
+    <!-- Today's special category-->
+    <div class="lorem">Today's Special </div>
+    <div class="products">
+        <div class="content">
+            <img src="images/hands-699486.jpg">
+            <h3>Product name</h3>
+            <p>This is text</p>
+            <h6>RS 499/-</h6>
+            <button class="buy1">Buy Now</button>
+
+        </div>
         <div class="products">
             <div class="content">
-                <img src="images/hands-699486.jpg">
+                <img src="image/xxx.jpg">
                 <h3>Product name</h3>
                 <p>This is text</p>
                 <h6>RS 499/-</h6>
-                <button class="buy1">Buy Now</button>
-              
+                <button class="buy2">Buy Now</button>
+
             </div>
             <div class="products">
                 <div class="content">
-                    <img src="image/xxx.jpg">
+                    <img src="">
                     <h3>Product name</h3>
                     <p>This is text</p>
                     <h6>RS 499/-</h6>
-                    <button class="buy2">Buy Now</button>
-                  
+                    <button class="buy3">Buy Now</button>
+
                 </div>
                 <div class="products">
                     <div class="content">
@@ -53,20 +131,53 @@
                         <h3>Product name</h3>
                         <p>This is text</p>
                         <h6>RS 499/-</h6>
-                        <button class="buy3">Buy Now</button>
-                        
+                        <button class="buy4">Buy Now</button>
+
                     </div>
-                    <div class="products">
-                        <div class="content">
-                            <img src="">
-                            <h3>Product name</h3>
-                            <p>This is text</p>
-                            <h6>RS 499/-</h6>
-                            <button class="buy4">Buy Now</button>
-                           
+                </div>
+                <!-- footer section -->
+                <div class="footer_section">
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer-brand">
+                                <h3>Designed by Dabiang and Wonderful</h3>
+                            </div>
+                            <div class="footer-social">
+                                <h4>Follow Us</h4>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-newsletter">
+                                <h4>Subscribe to Our Newsletter</h4>
+                                <form action="#" method="post">
+                                    <input type="email" name="email" placeholder="Enter your email">
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                            <div class="footer-affiliate">
+                                <h4>Affiliated Companies</h4>
+                                <ul>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Company 1</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Company 2</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Company 3</a></li>
+                                    <li><a href="#" target="_blank" rel="noopener noreferrer">Company 4</a></li>
+                                </ul>
+                            </div>
                         </div>
-        </div>
+                    </footer>
 
+                </div>
+                <!-- footer section -->
 
-    </body>
+</body>
+
 </html>

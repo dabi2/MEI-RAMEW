@@ -1,0 +1,204 @@
+* {
+  font-family: "lato", "Courier New", Courier, monospace;
+  color: #333;
+}
+.navigation_bar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.navigation_bar h1 {
+  font-family: "audiowide", "Courier New", Courier, monospace;
+  margin: 0; /* Remove default margin */
+}
+.navigation_bar a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  position: absolute;
+  margin-left: 150vh;
+  list-style-type: none;
+}
+
+.menu a:hover {
+  color: #00acfc; /* Change text color on hover */
+}
+.menu li {
+  position: relative; /* Add position relative to the list items */
+}
+
+.menu li a {
+  display: inline-block; /* Display the links as block elements */
+  position: relative; /* Add position relative to the links */
+  text-decoration: none; /* Remove default underline */
+}
+
+.menu li a::after {
+  content: ""; /* Create pseudo-element for the line */
+  position: absolute; /* Position the line absolutely */
+  bottom: 0; /* Align the line to the bottom of the links */
+  left: 0; /* Align the line to the left of the links */
+  width: 0; /* Initially set the width of the line to 0 */
+  height: 2px; /* Set the height of the line */
+  background-color: #007bff; /* Set the color of the line */
+  transition: width 0.3s ease; /* Add transition for width change */
+}
+
+.menu li a:hover::after {
+  width: 100%; /* Expand the width of the line on hover */
+}
+
+.search {
+  margin-left: auto; /* Push search to the right */
+}
+
+.search {
+  display: flex;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+}
+
+.search button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff; /* Example background color */
+  color: #fff; /* Example text color */
+  border: none;
+  cursor: pointer;
+}
+/* body_section carousel slider */
+.body_section{
+    border: solid;
+}
+.carousel {
+  margin-top: 50px;
+  margin-right: 200px;
+  position: relative;
+  width: 500px; /* Adjust carousel width as needed */
+  height: 300px; /* Adjust carousel height as needed */
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10%;
+}
+/* body_section carousel slider */
+/* footer section */
+/* Footer container */
+.footer {
+  background-color: #f8f9fa; /* Background color */
+  padding: 50px 0; /* Padding for top and bottom */
+  color: #333; /* Text color */
+}
+.footer-social ul li a:hover {
+  color: #0e6cd1; /* Change text color on hover */
+}
+
+/* Container within footer */
+.container {
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center align */
+  padding: 0 20px; /* Padding for left and right */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Footer sections */
+.footer-brand,
+.footer-social,
+.footer-newsletter,
+.footer-affiliate {
+  width: calc(25% - 20px); /* Each section takes 25% width with some margin */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+}
+/* Footer headings */
+h3,
+h4 {
+  font-size: 18px; /* Font size */
+  margin-bottom: 15px; /* Bottom margin for spacing */
+  color: #333; /* Text color */
+}
+
+/* Social media links */
+.footer-social ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-social ul li {
+  display: inline-block; /* Display inline */
+  margin-right: 15px; /* Right margin between links */
+}
+
+.footer-social ul li a {
+  color: #333; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Newsletter form */
+.footer-newsletter form {
+  display: flex; /* Display form elements in a row */
+}
+
+.footer-newsletter input[type="email"] {
+  width: 70%; /* Input field width */
+  padding: 10px; /* Padding for input */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+}
+
+.footer-newsletter button {
+  width: 30%; /* Button width */
+  padding: 10px; /* Padding for button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+}
+
+.footer-newsletter button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Affiliate links */
+.footer-affiliate ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-affiliate ul li {
+  margin-bottom: 5px; /* Bottom margin for spacing */
+}
+
+.footer-affiliate ul li a {
+  color: #333; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-affiliate ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* footer section */
