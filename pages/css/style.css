@@ -104,6 +104,7 @@ color: white;
 
 /* horizontal_for_slogan */
 .horizontal_for_slogan{
+    border: 1px;
     display: flex;
 }
 .horizontal_for_slogan {
