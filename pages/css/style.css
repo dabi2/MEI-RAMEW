@@ -78,6 +78,13 @@
     border: solid;
 }
 /* _Main_Slogan */
+._Main_Slogan{
+    margin-top: 50px;
+    width: fit-content;
+    border: solid;
+     position: relative;
+     margin-left: 50px;
+}
 #Explore_button{
     font-family: "Merriweather";
     font-size: 20px;
@@ -91,11 +98,16 @@ font-size: 60px;
 #Explore_the_Flavorful_World_of_Cultural_Cuisine{
     font-family: "audiowide";
 }
+/* horizontal_for_slogan */
+.horizontal_for_slogan{
+    display: flex;
+}
+/* horizontal_for_slogan */
 /* _Main_Slogan */
 .carousel {
-  margin-top: 50px;
-  margin-right: 200px;
-  position: relative;
+margin-top: 100px;
+margin-bottom: 100px;
+    margin-right: 200px;
   width: 500px; /* Adjust carousel width as needed */
   height: 300px; /* Adjust carousel height as needed */
   overflow: hidden;
