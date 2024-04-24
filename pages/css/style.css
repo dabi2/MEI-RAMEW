@@ -254,7 +254,7 @@ h4 {
 }
 
 /* footer section */
-.lorem{
+.today-special{
   font-size: 32px;
   text-align: left;
   font-weight: bold;
@@ -282,7 +282,7 @@ h4 {
   border-radius: 20px;
   cursor: pointer;
   padding-top: 10px;
-  box-shadow: 0 15px 28px rgb(0, 0, 0, 0.25), 0 10px 10px rgb(0,0,0,0.22);
+  box-shadow: 0 15px 28px rgb(0,0,0,0.25), 0 10px 10px rgb(0,0,0,0.22);
   transition: .4s;
   background: rgb(255,255,255);
 
@@ -309,8 +309,30 @@ h4 {
 }
 .order-button:hover{
   background-color: #0056b3; /*changes background color on hover*/
-  transform: translate(0px, -4px); 
+  transform: translate(0px, -2px); 
   color: #fff;
+}
+/*add to cart button*/
+.add-to-cart{
+  font-size: 12px;
+  color: #007bff;
+  width: 35%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  transition: .4s;
+  flex-wrap: wrap;
+}
+.add-to-cart:hover{
+  background-color: #0056b3 ; /*changes background color on hover*/
+  transform: translate(0px, -2px); 
+  color: #fff ;
 }
 /*Today's special products photos*/
 img{
