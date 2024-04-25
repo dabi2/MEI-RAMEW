@@ -1,0 +1,91 @@
+*{
+    font-family: lato;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: url('background3.jpg') no-repeat;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    background:#b0deb5;
+    color: #002605;
+    width: 40%;
+    height: 70%;
+    padding: 30px 40px;
+}
+.container h1{
+    text-align: center;
+    font-size: 36px;
+}
+.container h2{
+    text-align: left;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.container p{
+    font-size: 12px;
+    text-align: left;
+
+}
+.container .input{
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.input input{
+    width: 240%;
+    height: 65%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #002605;
+    border-radius: 0px;
+    color: #002605;
+}
+.input input:hover{
+    transform: translate(0 -2px);
+
+}
+.horizontal-line{
+    width: 100%;
+    height: 2px;
+    margin-top: ;
+    margin-bottom: 5px;
+    background-color: #002605;
+    color: #002605;
+}
+.container .proceed-to-payment{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #002605;
+    outline: none;
+    border-radius: 10px;
+    color: #002605;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 10px;
+    
+}
+.container .proceed-to-payment:hover{
+    color: #b0deb5;
+    background-color: #002605;
+}

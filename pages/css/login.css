@@ -29,7 +29,7 @@ body{
     height: 50px;
     justify-content: center;
     align-items: center;
-    background: ;
+    
     margin: 30px 0;
 }
 .input-box input{
@@ -50,7 +50,7 @@ body{
 .input-box i{
     position: absolute;
     right:px;
-    top: ;
+    
     transform:translate(-50%) ;
     font-size: 20px;
 
@@ -104,4 +104,19 @@ body{
 }
 .register p a:hover{
     text-decoration: underline;
+} 
+
+
+.register p a::after {
+    content: ""; /* Create pseudo-element for the line */
+    position: absolute; /* Position the line absolutely */
+    bottom: 0; /* Align the line to the bottom of the links */
+    left: 0; /* Align the line to the left of the links */
+    width: 0; /* Initially set the width of the line to 0 */
+    height: 2px; /* Set the height of the line */
+    background-color: #002605; /* Set the color of the line */
+    transition: width 0.3s ease; /* Add transition for width change */
+}
+.register p a:hover::after {
+    width: 100%; /* Expand the width of the line on hover */
 }
