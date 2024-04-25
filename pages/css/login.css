@@ -3,15 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: url('background1.jpg') no-repeat;
 }
-body{
+.wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background1.jpg') no-repeat;
-}
-.wrapper{
     background:#b0deb5;
     color: #002605;
     width: 40%;
