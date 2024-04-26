@@ -10,11 +10,12 @@ body{
     display: flex;
     min-height: 100vh;
     align-items: center;
-    background: url('thankyoubackground.jpg') no-repeat;
+    background: #095512
     
 }
 .container{
     justify-content: center;
+    align-content: center;
     align-items: center;
     width: 50%;
     height: 70%;
@@ -38,6 +39,9 @@ body{
 }
 .container h3{
     font-size: 20px;
+    width: 50%;
+    position: relative;
+    left: 160px;
     text-align: center;
     justify-content: center;
     background-color: #095512;
@@ -47,22 +51,22 @@ body{
 }
 i{
     font-size: 100px;
+    align-content: center;
     position: relative;
+    left: 260px;
     color: #095512;
     text-align: center;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    padding-left: 260px;
-
-
 }
 .container a{
     font-size:13px ;
+    position: relative;
+    left: 290px;
     color: #002605;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-left: 290px;
 }
