@@ -1,0 +1,127 @@
+*{
+    font: lato;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: url('') no-repeat;
+}
+.main-container{
+    justify-content: center;
+    align-items: center;
+    background:#b0deb5;
+    color: #002605;
+    width: 70%;
+    height: 100%;
+    padding: 30px 40px;
+}
+.main-container h1{
+    font-size: 2.25em;
+    text-align: center;
+    justify-content: center;
+    color: #002605;
+}
+.container1{
+    justify-content: left;
+    align-items: left;
+    color: #002605;
+    width: 50%;
+    height: 100%;
+    padding: 30px 40px;
+
+}
+.container1 h2{
+    font-size: 0.937em;
+    text-align: left;
+    justify-content: center;
+    color: #002605;
+    width: 100%;
+    border-bottom: #002605 solid;
+    border-width: 2px;
+}
+.container1 .wrapper{
+    width: 100%;
+    height: ;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.container1 .wrapper .options{
+    width: ;
+    height: ;
+    background: transparent;
+    margin: 15px;
+    padding: 10px 0 10px;
+    display: flex;
+    align-items: left;
+    border: 2px solid #002605;
+    position: relative;
+}
+.container1 .wrapper .options label{
+    font-size: 0.9em;
+}
+.container1 .wrapper .options label::after{
+    content: ;
+    position: absolute;
+    right: 20%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #002605;
+    border-radius: 50%;
+}
+.horizontal-line{
+    width: 100%;
+    height: 3px;
+    margin-top: 18px ;
+    margin-bottom: 5px;
+    background-color: #002605;
+    color: #002605;
+}
+.confirm{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #002605;
+    outline: none;
+    border-radius: 10px;
+    color: #002605;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.confirm:hover{
+    color: #b0deb5;
+    background-color: #002605;
+}
+.container2{
+    justify-content: right;
+    align-items: right;
+    color: #002605;
+    width: 50%;
+    height: 100%;
+    padding: 30px 40px;
+}
+
+
+h3{
+    font-size: 0.937em;
+    text-align: left;
+    justify-content: center;
+    color: #002605;
+    width: 100%;
+    border-bottom: #002605 solid;
+    border-width: 2px;
+}
+input{
+    border: #002605 solid;
+    border-width: 2px;
+
+}
