@@ -52,8 +52,12 @@ body{
     align-items: left;
     flex-direction: column;
     margin-top: 20px;
-    margin-bottom: 20px
-}
+    margin-bottom: 20px;
+} 
+.options input{
+    display: none;
+}   
+
 .container1 .wrapper .options{
     width: ;
     height: ;
@@ -67,15 +71,33 @@ body{
 }
 .container1 .wrapper .options label{
     font-size: 0.9em;
+    margin-left: 5px;
 }
 .container1 .wrapper .options label::after{
-    content: ;
+    content: "";
     position: absolute;
-    right: 20%;
-    width: 20px;
-    height: 20px;
+    right: 3%;
+    width: 15px;
+    height: 15px;
     border: 2px solid #002605;
     border-radius: 50%;
+    cursor: pointer;
+}
+.container1 .wrapper .options label::before{
+    content: "";
+    position: absolute;
+    top: 34.5%;
+    right: 3%;
+    transform: translate(-20%);
+    width: 13px;
+    height: 13px;
+    background-color: #002605;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s;   
+}
+.options input:checked ~ label::before{
+    opacity: 1;
 }
 .horizontal-line{
     width: 100%;
@@ -103,11 +125,13 @@ body{
 }
 .container2{
     justify-content: right;
+    display: flex;
     align-items: right;
     color: #002605;
     width: 50%;
     height: 100%;
     padding: 30px 40px;
+    border: 2px solid;
 }
 
 
