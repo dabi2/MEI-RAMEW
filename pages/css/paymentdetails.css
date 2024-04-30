@@ -11,28 +11,33 @@ body{
     align-items: center;
     background: url('') no-repeat;
 }
+h1{
+    font-size: 2.25em;
+    justify-content: ;
+    color: #002605;
+    align-items: ;
+    text-align: center;
+    
+}
 .main-container{
     justify-content: center;
-    align-items: center;
+    display: flex;
+    align-items:center ;
     background:#b0deb5;
     color: #002605;
     width: 70%;
-    height: 100%;
-    padding: 30px 40px;
+    border: 2px solid #002605;
+    padding:30px 40px;
 }
-.main-container h1{
-    font-size: 2.25em;
-    text-align: center;
-    justify-content: center;
-    color: #002605;
-}
+
 .container1{
     justify-content: left;
     align-items: left;
     color: #002605;
-    width: 50%;
+    width: 40%;
     height: 100%;
     padding: 30px 40px;
+    border: 2px solid #002605;
 
 }
 .container1 h2{
@@ -88,16 +93,15 @@ body{
     position: absolute;
     top: 34.5%;
     right: 3%;
-    transform: translate(-20%);
+    transform: translate(-20%) scale(0);
     width: 13px;
     height: 13px;
     background-color: #002605;
     border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.4s;   
+    transition: 0.4s;   
 }
 .options input:checked ~ label::before{
-    opacity: 1;
+    transform: translate(-20%) scale(1);
 }
 .horizontal-line{
     width: 100%;
@@ -124,14 +128,14 @@ body{
     background-color: #002605;
 }
 .container2{
-    justify-content: right;
+    justify-content: center;
     display: flex;
-    align-items: right;
+    align-items: ;
     color: #002605;
-    width: 50%;
+    width: 40%;
     height: 100%;
     padding: 30px 40px;
-    border: 2px solid;
+    border:2px solid #002605;
 }
 
 
@@ -149,3 +153,40 @@ input{
     border-width: 2px;
 
 }
+/*--product list--*/
+.product-list{
+    margin: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.product-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+td{
+    padding: 10px;
+
+}
+td input{
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px solid #002605;
+    color: #002605;
+}
+td img{
+    width: 50px;
+    height: 50px;
+}
+td a i{
+    font-size: 20px;
+    color: #002605;
+}
+td a i:hover{
+    color: #b0deb5;
+    background-color: #002605;
+}
+
