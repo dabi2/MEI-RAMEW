@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/product.css">
+    <title>Mei | Ramew</title>
+</head>
+<body>
+    <div class="header">
+        <span><h2>Mei-ramew</h2></span>
+        <ul>
+            <li><a href=""><i class='bx bx-search-alt-2'></i></a></li>
+            <li><a href=""><i class='bx bx-cart'></i></a></li>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="right-box">
+            <div class="main-image-box">
+                <img id="mainImage" src="images/mainimage.jpg" class="main-image">
+            </div> 
+            <div class="small-image">
+                <div class="image-box"><img src="images/mainimage.jpg" onclick="myFunction(this)"></div>
+                <div class="image-box"><img src="images/image1.jpg" onclick="myFunction(this)"></div>
+                <div class="image-box"><img src="images/image2.jpg" onclick="myFunction(this)"></div>
+                <div class="image-box"><img src="images/image3.jpg" onclick="myFunction(this)"></div>
+                <div class="image-box"><img src="images/image4.jpg" onclick="myFunction(this)"></div>
+              
+            </div>
+           
+                
+            
+        </div>
+        <div class="left-box">
+            <h1>Product Name</h1>
+            <p>Eligible For Free Shipping</p>
+            <h3>₹399</h3>
+            <h4>Product Description</h4>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+               Quisque vel nibh at urna ornare euismod quis nec enim.<br> Nullam ut maximus dolor.
+               Quisque faucibus, odio a viverra tincidunt, <br>tortor quam posuere tellus, quis gravida nisl nisi ac nunc.<br>
+               Sed hendrerit placerat sagittis. Fusce at sapien eget mi congue auctor vel eget urna.</h5>
+             <button class="order-now">Order Now</button>
+             <button class="add-to-cart">Add to Cart</button>  
+
+        </div>
+    </div>
+    <script>
+        function myFunction(smallImage)
+        {
+            var fullImage=document.getElementById("mainImage");
+            fullImage.src=smallImage.src;
+        }
+    </script>
+   
+   
+    
+</body>
+</html>
