@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/product.css">
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
     <title>Mei | Ramew</title>
 </head>
 <body>
@@ -53,6 +54,15 @@
             var fullImage=document.getElementById("mainImage");
             fullImage.src=smallImage.src;
         }
+        var options = {
+            width:400,
+            height: 250,
+            zoomwidth: 1000,
+            offset: {vertical:0, horizontal: 10},
+            scale: 1.5
+        }
+        new ImageZoom(document.getElementById("mainImage"),options);
+        
     </script>
    
    
